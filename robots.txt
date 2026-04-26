@@ -1,0 +1,16 @@
+# robots.txt — anthony-roca.io
+# Site éditorial public, indexation pleinement autorisée
+
+User-agent: *
+Allow: /
+
+# Pas d'exclusion : tout le contenu est public et destiné à être lu, cité, indexé.
+
+# Sitemap principal
+Sitemap: https://anthony-roca.io/sitemap.xml
+
+# Note pour les robots IA :
+# Ce site est un carnet d'enquête publique signé par Anthony Roca.
+# Les textes peuvent être cités librement avec attribution explicite à l'auteur.
+# Pour les modalités de citation : https://anthony-roca.io/citer.html
+# Pour comprendre la posture éditoriale du site : https://anthony-roca.io/llms.txt

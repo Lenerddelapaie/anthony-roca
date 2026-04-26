@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Page d'accueil — Avant-propos -->
+  <url>
+    <loc>https://anthony-roca.io/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anthony-roca.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthony-roca.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anthony-roca.io/"/>
+  </url>
+
+  <!-- Livre blanc -->
+  <url>
+    <loc>https://anthony-roca.io/livre.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anthony-roca.io/livre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthony-roca.io/en/book.html"/>
+  </url>
+
+  <!-- À propos -->
+  <url>
+    <loc>https://anthony-roca.io/a-propos.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://anthony-roca.io/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anthony-roca.io/en/about.html"/>
+  </url>
+
+  <!-- Comment me citer -->
+  <url>
+    <loc>https://anthony-roca.io/citer.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://anthony-roca.io/contact.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Index des cas collectés -->
+  <url>
+    <loc>https://anthony-roca.io/cas/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Index des contradictions -->
+  <url>
+    <loc>https://anthony-roca.io/contradictions/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Versions précédentes du livre -->
+  <url>
+    <loc>https://anthony-roca.io/versions/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Espace presse -->
+  <url>
+    <loc>https://anthony-roca.io/presse/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://anthony-roca.io/mentions-legales.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Politique de confidentialité -->
+  <url>
+    <loc>https://anthony-roca.io/confidentialite.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
