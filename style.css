@@ -1,0 +1,696 @@
+/* ========================================
+   anthony-roca.io
+   Une lecture, rien d'autre.
+   ======================================== */
+
+/* ----- Variables — pour bascule typo facile ----- */
+:root {
+  --serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  
+  --bg:        #FAFAF7;
+  --ink:       #1A1A1A;
+  --ink-soft:  #4A4A4A;
+  --ink-muted: #767676;
+  --line:      #E8E5DC;
+  --accent:    #3D1F4F;
+  
+  --max-text: 36rem;
+  --max-page: 56rem;
+}
+
+/* ----- Import polices Google ----- */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,400i&family=Inter:wght@400;500;600&display=swap');
+
+/* ----- Reset minimal ----- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.7;
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----- Conteneurs ----- */
+.wrap {
+  max-width: var(--max-text);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.wrap-wide {
+  max-width: var(--max-page);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ----- Navigation — discrète, sans-serif ----- */
+nav {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  padding: 1.5rem 0;
+}
+
+nav .wrap-wide {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav .brand {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.75rem;
+}
+
+nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ----- Titre principal ----- */
+h1 {
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 5rem 0 3.5rem;
+  color: var(--ink);
+}
+
+/* ----- Sections ----- */
+h2 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 4rem 0 1.5rem;
+  letter-spacing: -0.005em;
+}
+
+/* ----- Texte courant ----- */
+article p {
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+/* Justification optionnelle pour le livre lui-même 
+   — désactivée par défaut, plus moderne */
+
+article a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(61, 31, 79, 0.4);
+  transition: text-decoration-color 0.15s ease;
+}
+
+article a:hover {
+  text-decoration-color: var(--accent);
+}
+
+article strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+article em {
+  font-style: italic;
+}
+
+/* ----- Séparateur ----- */
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 4rem;
+}
+
+/* ----- Citation classique (sources externes : presse, jurisprudence, etc.) ----- */
+blockquote {
+  margin: 2rem 0;
+  padding: 0 0 0 1.5rem;
+  border-left: 2px solid var(--accent);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0 0 0.7rem;
+}
+
+blockquote p:last-child {
+  margin: 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  font-family: var(--sans);
+}
+
+blockquote cite::before {
+  content: "— ";
+}
+
+/* ----- Accroche d'ouverture ----- */
+.exergue {
+  margin: 3rem 0;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.exergue p {
+  margin: 0 0 0.4rem;
+}
+
+.exergue p:last-child {
+  margin: 0;
+}
+
+/* ----- Phrase-clé (formules fondatrices du livre) ----- */
+.cle {
+  margin: 3.5rem 0;
+  padding: 0 0 0 1.5rem;
+  border-left: 3px solid var(--accent);
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.008em;
+}
+
+.cle p {
+  margin: 0 0 0.5rem;
+}
+
+.cle p:last-child {
+  margin: 0;
+}
+
+/* Variante "rigoureuse" — légèrement plus discrète, pour la version analytique 
+   d'une phrase-clé déjà posée en version militante */
+.cle-rigoureuse {
+  margin: 2rem 0 3rem;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-soft);
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--accent);
+}
+
+.cle-rigoureuse p {
+  margin: 0;
+}
+
+/* ----- Bloc d'en-tête type publication direct response ----- */
+/* Structure : titre — trait — chapeau — trait — article */
+.entete {
+  margin: 5rem 0 4rem;
+  text-align: center;
+}
+
+.entete h1 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.entete .chapeau {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-weight: 400;
+  margin: 1.5rem auto;
+  max-width: 32rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.entete .chapeau p {
+  margin: 0;
+}
+
+.entete .filet {
+  border: none;
+  border-top: 2px solid var(--accent);
+  margin: 1.5rem auto;
+  width: 4rem;
+  max-width: none;
+}
+
+/* Variante avec deux filets (encadrement complet du chapeau) */
+.entete-double .filet {
+  width: 100%;
+  border-top: 2px solid var(--accent);
+  margin: 1.5rem 0;
+}
+
+/* ----- Signature en pied d'article ----- */
+.signature {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
+.signature .name {
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.signature p {
+  margin: 0.3rem 0;
+}
+
+/* ----- Bloc bio auteur (E-E-A-T) ----- */
+.bio-auteur {
+  margin: 4rem 0 0;
+  padding: 2.5rem 0;
+  border-top: 2px solid var(--accent);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.bio-auteur .photo {
+  flex-shrink: 0;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: var(--line);
+  overflow: hidden;
+  position: relative;
+}
+
+.bio-auteur .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%) contrast(1.05);
+  transition: filter 0.3s ease;
+}
+
+.bio-auteur:hover .photo img {
+  filter: grayscale(0%) contrast(1);
+}
+
+.bio-auteur .photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.bio-auteur .contenu {
+  flex: 1;
+}
+
+.bio-auteur .contenu h3 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+.bio-auteur .contenu .role {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin: 0 0 1rem;
+}
+
+.bio-auteur .contenu p {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+.bio-auteur .contenu .liens {
+  margin-top: 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.bio-auteur .contenu .liens a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(61, 31, 79, 0.3);
+}
+
+.bio-auteur .contenu .liens a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.bio-auteur .contenu .liens .sep {
+  color: var(--line);
+  margin: 0 0.6rem;
+}
+
+/* ----- Téléchargement PDF (livre blanc) ----- */
+.telechargement {
+  margin: 3rem 0;
+  padding: 1.5rem 1.8rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.telechargement .icone {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.telechargement .info {
+  flex: 1;
+  min-width: 14rem;
+}
+
+.telechargement .info h4 {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+.telechargement .info p {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.telechargement .action {
+  flex-shrink: 0;
+}
+
+.telechargement .action a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--bg);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.telechargement .action a:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .telechargement {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  
+  .telechargement .action {
+    width: 100%;
+  }
+  
+  .telechargement .action a {
+    display: block;
+    text-align: center;
+  }
+}
+.abonnement {
+  margin: 3rem 0 0;
+  padding: 2.5rem 2rem;
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  text-align: center;
+}
+
+.abonnement h3 {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+.abonnement p {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.abonnement form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+.abonnement input[type="email"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.abonnement input[type="email"]:focus {
+  border-color: var(--accent);
+}
+
+.abonnement button {
+  padding: 0.75rem 1.4rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.abonnement button:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.abonnement .precision {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin: 1rem 0 0;
+}
+
+/* ----- Pied de page ----- */
+footer {
+  margin-top: 6rem;
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+footer .wrap-wide {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin: 0.4rem 0;
+}
+
+footer a {
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+footer .col-title {
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-bottom: 0.6rem;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 640px) {
+  body { font-size: 17px; line-height: 1.65; }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin: 3rem 0 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin: 3rem 0 1.2rem;
+  }
+  
+  .exergue {
+    font-size: 1.15rem;
+    margin: 2rem 0;
+  }
+  
+  .cle {
+    font-size: 1.25rem;
+    margin: 2.5rem 0;
+    padding-left: 1rem;
+  }
+  
+  .cle-rigoureuse {
+    font-size: 1.05rem;
+    margin: 1.5rem 0 2rem;
+    padding-left: 1rem;
+  }
+  
+  .entete {
+    margin: 3rem 0 2.5rem;
+  }
+  
+  .entete .chapeau {
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+  
+  .entete .filet {
+    margin: 1rem auto;
+  }
+  
+  .bio-auteur {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .bio-auteur .photo {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .bio-auteur .contenu p {
+    text-align: left;
+  }
+  
+  .abonnement {
+    padding: 2rem 1.2rem;
+  }
+  
+  .abonnement form {
+    flex-direction: column;
+  }
+  
+  .abonnement button {
+    width: 100%;
+  }
+  
+  nav ul {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ----- Sélection ----- */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ----- Pour bascule vers Tiempos/Styrene plus tard ----- */
+/* Il suffira de changer ces deux variables au sommet :
+   --serif: 'Tiempos Text', serif;
+   --sans: 'Styrene A', sans-serif;
+   et d'ajouter les @font-face correspondants. */
