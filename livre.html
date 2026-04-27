@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA — Livre blanc d'Anthony Roca</title>
+  <meta name="description" content="Livre blanc d'Anthony Roca, praticien de la paie. Thèse : le salaire ne paie pas l'exécution des tâches, il paie la responsabilité humaine. L'IA prend les tâches, pas le salaire. 12 000 mots, 9 parties.">
+  <meta name="author" content="Anthony Roca">
+  <meta name="keywords" content="salaire IA, intelligence artificielle travail, responsabilité salariale, trou noir responsabilité, gestionnaire de paie IA, avenir du salariat">
+  <link rel="canonical" href="https://anthony-roca.io/livre.html">
+
+  <meta property="og:title" content="Qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA">
+  <meta property="og:description" content="Livre blanc d'Anthony Roca. Le salaire ne paie pas l'exécution des tâches — il paie une responsabilité subordonnée que l'IA ne peut pas tenir.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://anthony-roca.io/livre.html">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Anthony Roca">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA">
+  <meta name="twitter:description" content="Livre blanc d'Anthony Roca. Le salaire paie une responsabilité que l'IA ne peut pas tenir.">
+
+  <link rel="alternate" hreflang="fr" href="https://anthony-roca.io/livre.html">
+  <link rel="alternate" hreflang="en" href="https://anthony-roca.io/en/book.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA",
+    "alternateName": "What Does It Mean to Earn a Salary in the Age of AI",
+    "author": {
+      "@type": "Person",
+      "name": "Anthony Roca",
+      "jobTitle": "Praticien et formateur en gestion de paie",
+      "url": "https://anthony-roca.io/a-propos.html",
+      "sameAs": [
+        "https://la-paie-facile.com",
+        "https://www.linkedin.com/company/la-paie-facile-com"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Les Publications Anthony Roca",
+      "url": "https://anthony-roca.io"
+    },
+    "datePublished": "2026-04-26",
+    "dateModified": "2026-04-26",
+    "inLanguage": "fr",
+    "url": "https://anthony-roca.io/livre.html",
+    "description": "Livre blanc défendant la thèse que le salaire paie une responsabilité subordonnée et non l'exécution des tâches, et que l'IA — incapable de porter une responsabilité — ne peut donc pas prendre un salaire au sens propre.",
+    "keywords": "salaire, IA, intelligence artificielle, responsabilité, salariat, travail, paie, gestionnaire de paie",
+    "version": "1",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Styles spécifiques au livre */
+    .livre-meta {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      margin: 2rem 0 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+    }
+
+    .livre-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .toc {
+      margin: 3rem 0 4rem;
+      padding: 2rem 2rem;
+      border: 1px solid var(--line);
+      background: var(--bg-alt);
+    }
+
+    .toc h2 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin: 0 0 1.2rem;
+      border: none;
+      padding: 0;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding: 0 0 0 1.2rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .toc li {
+      color: var(--ink-soft);
+    }
+
+    .toc a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      border: none;
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+    }
+
+    .partie-titre {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--accent);
+    }
+
+    .partie-numero {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .partie-titre h2 {
+      margin: 0;
+      font-size: 1.6rem;
+      border: none;
+      padding: 0;
+    }
+
+    .telechargement-livre {
+      margin: 0 0 4rem;
+      padding: 1.2rem 1.5rem;
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      color: var(--ink-soft);
+    }
+
+    .telechargement-livre a {
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: none;
+      border: none;
+      white-space: nowrap;
+    }
+
+    .telechargement-livre a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .toc { padding: 1.5rem 1.2rem; }
+      .partie-titre h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap-wide">
+    <a href="/" class="brand">Anthony Roca</a>
+    <ul>
+      <li><a href="/a-propos.html">À propos</a></li>
+      <li><a href="/citer.html">Citer</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+  <article>
+
+    <header class="entete entete-double">
+      <h1>Qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA</h1>
+      <hr class="filet">
+      <div class="chapeau">
+        <p>Livre blanc · Version 1 · Avril 2026 · Anthony Roca</p>
+      </div>
+      <hr class="filet">
+    </header>
+
+    <div class="livre-meta">
+      <span>12 000 mots · 9 parties</span>
+      <span>Praticien et formateur en gestion de paie depuis 2014</span>
+      <span>Mis à jour le 26 avril 2026</span>
+    </div>
+
+    <div class="telechargement-livre">
+      <span>📄 Version PDF disponible :</span>
+      <a href="/livre-v1.pdf" download>Télécharger le livre blanc (PDF) →</a>
+    </div>
+
+    <nav class="toc" aria-label="Table des matières">
+      <h2>Table des matières</h2>
+      <ol>
+        <li><a href="#partie-i">La question qu'on n'ose pas poser</a></li>
+        <li><a href="#partie-ii">L'IA ne prend pas ton travail. Elle prend les tâches.</a></li>
+        <li><a href="#partie-iii">Alors le salariat devient-il vide ?</a></li>
+        <li><a href="#partie-iv">La réponse : le salaire paie une responsabilité, pas une exécution</a></li>
+        <li><a href="#partie-v">Ce que l'IA révèle vraiment</a></li>
+        <li><a href="#partie-vi">Le trou noir de la responsabilité</a></li>
+        <li><a href="#partie-vii">Mais qui possède l'outil ?</a></li>
+        <li><a href="#partie-viii">La voie : posséder l'outil</a></li>
+        <li><a href="#partie-ix">Réponse au titre</a></li>
+      </ol>
+    </nav>
+
+    <!-- PARTIE I -->
+    <section id="partie-i" class="partie-titre">
+      <span class="partie-numero">Partie I</span>
+      <h2>La question qu'on n'ose pas poser</h2>
+    </section>
+
+    <p>Sylvain Le Quéré a quarante-quatre ans. Pendant vingt ans, il a travaillé pour une entreprise française de veille médiatique qui produisait des revues de presse pour des groupes du CAC 40 et des ministères. En 2022, son entreprise est rachetée par un fonds d'investissement américain. Un an et demi plus tard, sa direction annonce un plan social. Sur deux cents postes de production, vingt-six doivent être conservés. Le reste sera remplacé par une intelligence artificielle développée par les équipes du fonds en Inde.</p>
+
+    <p>L'histoire est connue. Elle se répète, sous des formes voisines, dans des dizaines de milliers d'entreprises occidentales en 2025 et 2026. Les grandes plateformes technologiques — Microsoft, Amazon, IBM, Google, Meta — ont annoncé chacune des suppressions de postes par dizaines de milliers, en invoquant tantôt l'IA, tantôt une réorganisation, tantôt un repositionnement stratégique. Les enquêtes auprès des dirigeants montrent qu'une part significative d'entre eux ont déjà réduit leurs effectifs en lien avec le déploiement de l'IA, dans la plupart des économies développées. La machine, paraît-il, prend des emplois.</p>
+
+    <p>Mais regardez la suite de l'histoire de Sylvain Le Quéré, telle qu'il l'a racontée à <em>Libération</em> en décembre 2025.</p>
+
+    <p>L'entreprise a remplacé une partie de ses effectifs par sa fameuse IA. Elle propose désormais deux versions de son produit. Une version premium, faite par un humain. Une version basique, entièrement générée par la machine.</p>
+
+    <p>Et la machine, cette machine censée justifier les licenciements, fait des choses étranges.</p>
+
+    <p>Sur le mot-clé "rafale", elle confond les avions de combat, les rafales de vent et la voiture Renault Rafale. À la requête sur l'université Paris-Dauphine, elle propose des recettes de pommes dauphines.</p>
+
+    <p>Ce n'est pas une anecdote. C'est un symptôme.</p>
+
+    <p>L'entreprise a supprimé deux cents postes en disant que la machine ferait le travail. La machine fait quelque chose. Elle ne fait pas le travail. Et l'entreprise, qui le sait, conserve en parallèle une offre humaine premium pour ses vrais clients — ceux qui paient pour la qualité.</p>
+
+    <p>Alors qu'est-ce qui s'est passé, au juste ?</p>
+
+    <hr>
+
+    <p>Ce qui s'est passé, c'est que deux cents personnes ont perdu leur salaire. Et que le service qu'elles produisaient continue d'exister, sous deux formes : une forme dégradée pour ceux qui acceptent de payer moins, une forme intacte pour ceux qui paient le prix d'avant.</p>
+
+    <p>Le travail n'a pas disparu. Le salaire, lui, a disparu.</p>
+
+    <p>Cette dissociation devrait nous arrêter. Parce qu'elle dit, sous nos yeux, quelque chose que personne ne nomme correctement.</p>
+
+    <p>L'IA n'a pas remplacé le travail des deux cents salariés. Elle a permis de continuer à produire un service comparable sans verser de salaires aux humains qui le produisaient. Ce n'est pas la même chose. Dans le premier cas, la machine fait ce que faisait l'humain. Dans le second, la machine produit l'apparence d'un service tandis que l'humain disparaît du dispositif salarial.</p>
+
+    <p>C'est précisément ce qui se joue partout. Pas la disparition du travail. La disparition du salaire qui le rémunérait.</p>
+
+    <hr>
+
+    <p>Quand un graphiste freelance voit sa cliente arriver avec un logo généré par IA et lui demander de l'améliorer pour quatre cents euros au lieu des mille deux cents qu'elle aurait payés un an plus tôt, ce n'est pas son travail qui est remplacé. C'est son revenu qui est divisé par trois pour une prestation comparable.</p>
+
+    <p>Quand un traducteur freelance constate que les missions disponibles sur les plateformes consistent désormais à corriger ce que l'IA a produit, à des tarifs défiant toute concurrence, ce n'est pas son métier qui meurt. C'est sa rémunération qui s'effondre.</p>
+
+    <p>Quand une conceptrice rédactrice voit ses commandes s'éteindre du jour au lendemain parce qu'une cliente a découvert ChatGPT, ce n'est pas la rédaction qui disparaît. C'est l'arrangement qui faisait que cette rédactrice, jusqu'ici, vivait de son travail.</p>
+
+    <p>Dans tous ces cas — qu'il s'agisse de salariés brutalement licenciés ou de freelances dont les revenus s'évaporent — ce qui est touché n'est pas la possibilité de produire. C'est la possibilité d'en vivre.</p>
+
+    <p>Voilà la vraie question. Voilà ce qui empêche les gens de dormir, le soir, dans leur cuisine, devant leur bulletin ou leur relevé de chiffre d'affaires.</p>
+
+    <div id="question-directrice" class="cle">
+      <p>La question n'est pas : est-ce que l'IA me remplace ?</p>
+      <p>La question est : est-ce que l'IA prend mon salaire ?</p>
+    </div>
+
+    <p>Ces deux questions n'ont pas la même forme. La première parle d'utilité. La seconde parle d'un arrangement institutionnel — celui qui fait qu'une part de la valeur produite revient à l'humain qui l'a produite, sous une forme qui lui permet de vivre.</p>
+
+    <p>Le débat public confond les deux. Il parle de remplacement quand il faudrait parler de captation. Il parle de transformation des métiers quand il faudrait parler de redirection des flux financiers. Il parle de l'avenir du travail quand il faudrait parler du présent du salaire.</p>
+
+    <hr>
+
+    <p>Et personne ne peut répondre à cette question sans d'abord en poser une autre, plus simple et plus dérangeante.</p>
+
+    <p><strong>Qu'est-ce que ça veut dire, aujourd'hui, toucher un salaire ?</strong></p>
+
+    <p>Pas avoir un emploi. Pas occuper un poste. Pas trouver du sens dans son activité.</p>
+
+    <p>Toucher un salaire. Le geste très concret qui consiste à voir arriver, le 30 ou le 31 du mois, une somme versée par un employeur, attestée par un document, reconnue par un contrat.</p>
+
+    <p>Cette question, le débat public ne la pose pas. Les cabinets de conseil dressent des listes de métiers menacés. Les politiques promettent de protéger les emplois. Les sociologues parlent de sens. Les futurologues parlent de revenu universel.</p>
+
+    <p>Aucun ne parle du salaire. Comme si c'était la variable dépendante. Comme si la réponse à la question du salaire allait découler automatiquement des transformations des métiers.</p>
+
+    <p>Elle ne le fera pas. Parce qu'on n'a jamais vraiment dit ce que ces salaires payaient.</p>
+
+    <hr>
+
+    <p>Depuis plus de dix ans, je fabrique des bulletins de paie et j'enseigne à les fabriquer. Cette double position — celle qui produit le document, et celle qui essaie d'en transmettre la lecture à des dirigeants, à des salariés, à des étudiants — m'a appris quelque chose que ni le seul praticien, ni le seul observateur n'aurait pu voir.</p>
+
+    <p>Ce n'est pas que les gens ne comprennent pas leur bulletin. C'est que le discours public, dans son ensemble, a été construit pour qu'on ne le comprenne pas. À voir des charges là où il y a des droits. À voir un coût là où il y a une inscription dans un corps social. À voir une perte là où il y a, en réalité, un dépôt.</p>
+
+    <p>Cette mauvaise lecture, qui arrange beaucoup de monde — comme nous le verrons —, devient brutalement coûteuse au moment où l'IA arrive. Parce qu'on ne peut pas défendre ce qu'on n'a pas nommé. Et que personne, jusqu'ici, n'a nommé ce qu'un salaire paie réellement.</p>
+
+    <p>Ce livre fait une chose. Il pose la question du titre — <em>qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA</em> — et il y répond depuis le seul endroit où elle peut être traitée honnêtement.</p>
+
+    <p>Pas depuis l'éditorial. Pas depuis la chaire universitaire. Pas depuis le rapport de cabinet de conseil.</p>
+
+    <p>Depuis un bulletin de paie.</p>
+
+    <!-- PARTIE II -->
+    <section id="partie-ii" class="partie-titre">
+      <span class="partie-numero">Partie II</span>
+      <h2>L'IA ne prend pas ton travail. Elle prend les tâches.</h2>
+    </section>
+
+    <p>Il faut poser tout de suite la phrase qui déplace le problème.</p>
+
+    <div id="phrase-marteau" class="cle">
+      <p>L'IA n'est pas là pour prendre ton travail. Elle est là pour faire les tâches de ton travail.</p>
+    </div>
+
+    <p>Cette phrase n'est pas un slogan. C'est une distinction. Et toute la confusion du débat actuel vient de ce qu'on ne la fait pas.</p>
+
+    <hr>
+
+    <p>Une tâche : lire une image médicale. Calculer un bulletin de paie. Rédiger un email standard. Traduire une phrase. Trier un courrier.</p>
+
+    <p>Un travail : porter un diagnostic. Répondre d'une paie devant un contrôle. Conduire une négociation. Publier un livre. Garantir la distribution d'un service.</p>
+
+    <p>Les tâches sont des opérations. Elles ont un début, une fin, un livrable. Elles se décrivent dans un cahier des charges.</p>
+
+    <p>Le travail n'est pas ça. Le travail, c'est l'assemblage cohérent de mille tâches — certaines prévisibles, d'autres non — au service d'une responsabilité qui ne se délègue pas.</p>
+
+    <p>L'IA automatise des tâches. Parfois très bien. Parfois mieux que les humains.</p>
+
+    <p>L'IA ne tient pas un travail.</p>
+
+    <hr>
+
+    <p>Regardez Geoffrey Hinton.</p>
+
+    <p>En 2016, devant un public de chercheurs réunis à Toronto, Hinton — l'un des fondateurs de l'apprentissage profond, prix Turing 2018, prix Nobel de physique 2024 — déclare qu'il faut arrêter de former des radiologues. Dans cinq à dix ans, dit-il, les machines liront les images médicales mieux qu'eux. La déclaration fait le tour du monde. Elle devient un argument standard du débat sur l'IA et l'emploi.</p>
+
+    <p>Nous sommes en 2026.</p>
+
+    <p>Les États-Unis manquent de radiologues. Les délais d'imagerie s'allongent dans la plupart des systèmes de santé occidentaux. Les salaires des radiologues américains figurent parmi les plus élevés du monde médical, et ils ont augmenté, pas diminué, sur la période 2016-2026. Les facultés peinent à pourvoir leurs spécialisations.</p>
+
+    <p>Hinton n'avait pas tort sur la machine. Les systèmes de reconnaissance d'image existent. Ils sont déployés. Ils détectent certaines anomalies mieux que l'œil humain moyen, notamment en imagerie du sein et en détection de nodules pulmonaires.</p>
+
+    <p>Il a eu tort sur autre chose.</p>
+
+    <p>Il a confondu lire une image avec être radiologue.</p>
+
+    <hr>
+
+    <p>Lire une image est une tâche.</p>
+
+    <p>Être radiologue, c'est poser un diagnostic, engager sa responsabilité médicale, dialoguer avec le médecin prescripteur, parler au patient quand le diagnostic est lourd, arbitrer les cas limites, et désormais gérer les outils d'IA — vérifier leurs suggestions, repérer leurs hallucinations, décider quand les suivre et quand les contredire.</p>
+
+    <p>Le métier n'a pas disparu. Il s'est transformé. Il s'est recentré sur ce que la machine ne fait pas.</p>
+
+    <p>Et c'est précisément pour ça qu'il est plus rare. Et plus cher.</p>
+
+    <hr>
+
+    <p>La même erreur est faite sur toutes les professions.</p>
+
+    <p>On dit que les traducteurs vont disparaître parce que DeepL traduit. David Creuze, traducteur freelance lillois interviewé par <em>Libération</em> en décembre 2025, a vécu cette annonce de l'intérieur. Pendant des mois, les missions disponibles sur les plateformes consistaient principalement à corriger ce que l'IA avait produit. Autrement dit, à entraîner la machine censée le remplacer. Puis Creuze a réorienté son activité. Il traduit désormais des œuvres littéraires. Et la maison d'édition française avec laquelle il a signé son dernier contrat a inscrit une clause explicite : il s'engage à ne pas utiliser d'IA dans son travail.</p>
+
+    <p>Cette clause est un signal. La maison d'édition ne paie pas un texte. Elle paie une garantie d'absence de machine. Elle paie le fait qu'un humain, identifiable, signe la traduction et en répond.</p>
+
+    <p>On dit que les comptables vont disparaître parce que les logiciels automatisent la saisie. Ils n'ont pas disparu. La saisie est automatisée depuis trente ans. Les comptables sont toujours là — parce que leur métier n'est pas la saisie. C'est la signature des comptes, le conseil au dirigeant, la responsabilité face à l'administration fiscale.</p>
+
+    <p>On dit que les gestionnaires de paie vont disparaître parce que les logiciels font les bulletins. Je parle ici de mon métier. Les logiciels font les bulletins depuis les années 1980. Ce qui reste à faire ne figure sur aucune documentation technique : lire un contrat mal rédigé, arbitrer un cas où deux conventions collectives se chevauchent, répondre à l'administration pendant un contrôle, tenir la relation avec un dirigeant qui signe ce qu'il ne comprend pas toujours.</p>
+
+    <p>On dit que les journalistes vont disparaître parce que les modèles de langage écrivent. Ils n'ont pas disparu. La machine écrit. Elle ne va pas enquêter. Elle n'engage aucune réputation. Elle ne répond de rien.</p>
+
+    <p>Dans chaque cas, le discours ambiant identifie le métier à sa tâche la plus visible. Puis il automatise la tâche. Puis il annonce la mort du métier.</p>
+
+    <p>La tâche peut mourir. Le métier, non — sauf si on laisse faire.</p>
+
+    <hr>
+
+    <p>Du coup, chaque salarié a un choix.</p>
+
+    <p>Il utilise l'IA pour se décharger de l'exécution, et consacrer ce temps à ce que la machine ne fait pas : arbitrer, signer, répondre, tenir la relation. Dans cette option, il monte. Sa position se clarifie. Sa valeur augmente.</p>
+
+    <p>Ou il s'accroche à l'exécution. Il continue à faire à la main ce que la machine fait mieux. Il refuse l'outil ou l'utilise mal. Dans cette option, il perd — non contre la machine elle-même, mais contre le prochain décideur qui se demandera pourquoi continuer à le payer pour faire moins bien qu'un logiciel.</p>
+
+    <p>Pas de troisième voie.</p>
+
+    <hr>
+
+    <p>Mais ce choix individuel ne suffit pas.</p>
+
+    <p>Parce que même le salarié qui fait le bon choix — qui monte, qui arbitre, qui tient la responsabilité — reste exposé à une autre question. Une question qu'il ne se pose pas lui-même, mais que d'autres posent à sa place.</p>
+
+    <p>Si la machine peut faire les tâches… à quoi sert encore de le salarier, lui ?</p>
+
+    <p>Cette question ne vise pas sa compétence. Elle vise l'arrangement qui le rémunère.</p>
+
+    <p>Et c'est là que les choses deviennent beaucoup plus difficiles à dire.</p>
+
+    <!-- PARTIE III -->
+    <section id="partie-iii" class="partie-titre">
+      <span class="partie-numero">Partie III</span>
+      <h2>Alors le salariat devient-il vide ?</h2>
+    </section>
+
+    <p>On arrive au point que personne ne veut examiner.</p>
+
+    <p>Si l'IA prend les tâches, la justification apparente du salariat s'effondre. Un décideur qui regarde un organigramme et qui voit que soixante-dix pour cent des tâches peuvent être automatisées se pose mécaniquement une question : pourquoi je continue à salarier ces gens ?</p>
+
+    <p>Ce n'est pas une question cynique. C'est une question structurelle.</p>
+
+    <p>Et elle appelle, pour qui la prend au sérieux, une réponse qu'aucun discours ambiant ne fournit.</p>
+
+    <hr>
+
+    <p>On pourrait croire que la question est théorique. Elle ne l'est pas.</p>
+
+    <p>Parce qu'il existe déjà, dans nos sociétés, un immense laboratoire grandeur nature de ce que produit un système où la rémunération n'achète que des tâches.</p>
+
+    <p>Ce laboratoire a un nom : les plateformes.</p>
+
+    <hr>
+
+    <p>Regardons.</p>
+
+    <p>Un chauffeur Uber est payé à la course. Pas à l'heure. Pas au mois. À la course.</p>
+
+    <p>Un livreur Deliveroo, DoorDash ou Glovo est payé à la livraison. Pas au temps passé. À la livraison.</p>
+
+    <p>Un travailleur du clic — ces gens qu'on ne voit pas, qui étiquettent les images qui entraînent les modèles d'IA pour quelques centimes la tâche — est payé à la micro-opération.</p>
+
+    <p>Chacun est rémunéré pour ce qu'il exécute. Strictement. Précisément. Sans marge.</p>
+
+    <p>C'est le système dont rêvent, à voix basse, certains décideurs quand ils regardent leurs effectifs et qu'ils pensent à l'IA.</p>
+
+    <p>Ce système fonctionne. Il est rentable. Il produit de la valeur.</p>
+
+    <p>Regardons ce qu'il produit d'autre.</p>
+
+    <hr>
+
+    <p>Le chauffeur de plateforme n'a pas de droit au chômage de droit commun. Si les courses s'arrêtent, il n'a rien.</p>
+
+    <p>Il n'a pas de retraite salariale qui se construit. Il cotise autrement, bien moins, et ses droits futurs seront plus faibles.</p>
+
+    <p>Il n'a pas de droit à la formation au sens du dispositif paritaire qui finance la montée en compétence des salariés.</p>
+
+    <p>Il n'a pas de protection contre la rupture — la plateforme peut le déconnecter unilatéralement, et les recours sont longs et incertains.</p>
+
+    <p>Il n'a pas de médecine du travail. Il n'a pas de congés payés. Il n'a pas d'arrêt maladie couvert au sens du salariat.</p>
+
+    <p>Il paie lui-même une partie de ses cotisations, sur un revenu net souvent inférieur à ce qu'il imagine au moment où il s'inscrit sur la plateforme.</p>
+
+    <p>Ces différences sont si nettes que les juridictions des grandes économies développées les reconnaissent désormais et les corrigent au cas par cas. La Cour suprême du Royaume-Uni, en 2021, a requalifié les chauffeurs Uber en <em>workers</em> — leur ouvrant le droit au salaire minimum, aux congés payés, à des protections contre la rupture.</p>
+
+    <blockquote>
+      <p>Les chauffeurs travaillent pour Uber dans le cadre d'un contrat conclu avec Uber London, sont rémunérés selon les tarifs fixés par Uber, et exercent leur prestation dans les conditions imposées par Uber.</p>
+      <cite>Uber BV v. Aslam, Cour suprême du Royaume-Uni, 19 février 2021</cite>
+    </blockquote>
+
+    <p>La Californie a tenté la même requalification avec la loi AB5 en 2019. La directive européenne de 2024 sur le travail de plateforme va dans le même sens. Partout, la jurisprudence reconnaît que les conditions réelles d'exécution du travail rapprochent ces travailleurs du salariat — et que le statut indépendant, dans beaucoup de cas, est une fiction au service de la plateforme.</p>
+
+    <p>Le système existe. Il fonctionne. Il produit moins de droits.</p>
+
+    <hr>
+
+    <p>Et l'arrangement de plateforme n'est pas le seul à comprimer ce que touche l'humain qui produit la valeur.</p>
+
+    <p>Marina, graphiste freelance interviewée par <em>Libération</em> en décembre 2025, raconte une scène qui appartient déjà au quotidien de millions de travailleurs intellectuels indépendants. Une fromagerie cliente lui apporte un logo généré par IA et lui demande de l'améliorer. Elle facture la prestation quatre cents euros. Sans IA, elle l'aurait facturée mille deux cents.</p>
+
+    <p>Marina n'est pas évincée. Elle est conservée. Mais le prix de sa position vient d'être divisé par trois. Son chiffre d'affaires annuel est passé de vingt-cinq mille à quinze mille euros. Elle envisage de se reconvertir.</p>
+
+    <p>Cette scène est l'avenir du salariat si le salariat ne se défend pas. Pas la suppression du salarié. La conservation du salarié à un prix que rien ne défend plus, parce que la justification apparente du prix — l'exécution — a été partiellement automatisée.</p>
+
+    <hr>
+
+    <p>Et voici ce qu'il faut tenir ensemble.</p>
+
+    <p>Si le salariat ne sert qu'à acheter des tâches, alors l'ubérisation et la compression des prix freelance sont sa forme moderne et rationnelle.</p>
+
+    <p>Mais si le salariat sert à autre chose — et c'est ce que ces deux phénomènes démontrent, par la négative, en montrant ce qu'on perd quand on les laisse faire — alors la question redevient urgente.</p>
+
+    <p>Quoi exactement ?</p>
+
+    <p>Qu'est-ce que le salariat produit que l'ubérisation et la compression freelance ne produisent pas ?</p>
+
+    <p>Qu'est-ce qui continue à tomber sur le compte d'un salarié, et qui ne tombe pas sur celui d'un chauffeur Uber ou d'une graphiste freelance dont les prix s'effondrent ?</p>
+
+    <p>Qu'est-ce que l'IA, si elle ne fait que prendre des tâches, menace vraiment quand elle menace un salaire ?</p>
+
+    <hr>
+
+    <p>La réponse n'est ni dans le discours sur le sens du travail, ni dans les programmes de reconversion, ni dans les promesses de revenu universel.</p>
+
+    <p>Elle est dans un document. Le bulletin de paie.</p>
+
+    <p>Parce que c'est là, et nulle part ailleurs, qu'on voit ce qu'un salaire fait vraiment.</p>
+
+    <p>Il est temps d'ouvrir ce document.</p>
+
+    <!-- PARTIE IV -->
+    <section id="partie-iv" class="partie-titre">
+      <span class="partie-numero">Partie IV</span>
+      <h2>La réponse : le salaire paie une responsabilité, pas une exécution</h2>
+    </section>
+
+    <p>Depuis dix ans, je regarde des bulletins de paie. Pas en passant. Pas comme un usager qui vérifie son net avant de ranger le document.</p>
+
+    <p>Je les regarde comme un praticien les fabrique. Et je les regarde aussi comme un formateur les enseigne — à des dirigeants, à des salariés, à des étudiants, à des professionnels qui découvrent que la question se pose chez eux dans des termes très proches.</p>
+
+    <p>Cette double position m'a appris une chose. Le bulletin de paie est, dans nos sociétés, l'un des documents les plus mal lus. On le reçoit. On regarde le net. On range. Très peu de salariés savent lire leur propre bulletin. Peu d'employeurs savent dire ce qu'ils versent vraiment, au-delà du total final. Et les commentateurs qui parlent du salaire — économistes, sociologues, éditorialistes — n'en lisent pas. Ils parlent du salaire comme d'un concept.</p>
+
+    <p>Moi je parle du salaire comme d'un document.</p>
+
+    <p>Et un document ne ment pas. Il dit, dans sa forme même, ce qu'il est en train de faire.</p>
+
+    <hr>
+
+    <p>Prenez n'importe quel bulletin d'un salarié occidental moyen. France, Allemagne, Royaume-Uni, États-Unis, Canada — peu importe. Ouvrez-le.</p>
+
+    <p>En haut, une somme. Le salaire brut. Disons trois mille euros, livres, ou dollars.</p>
+
+    <p>En bas, une autre somme. Le net à payer. Disons deux mille trois cents.</p>
+
+    <p>Entre les deux, une vingtaine de lignes. Les noms changent selon les pays — assurance maladie, retraite obligatoire, retraite complémentaire, assurance chômage, contribution sociale, prévoyance, mutuelle, formation professionnelle. Mais les fonctions sont partout les mêmes. Personne ne les regarde.</p>
+
+    <p>Demandez à un salarié ce que représentent ces lignes. Il vous répondra, avec un mélange d'agacement et de résignation : <em>les charges</em>. Demandez à un dirigeant : il vous répondra <em>le coût</em>. Demandez à un économiste : il parlera de <em>coin fiscalo-social</em>.</p>
+
+    <p>Aucun ne vous dira ce que ces lignes font.</p>
+
+    <hr>
+
+    <p>Prenons une seule de ces lignes. Disons "assurance vieillesse", ou son équivalent dans n'importe quel système national.</p>
+
+    <p>Le salarié regarde cette ligne — cent vingt euros prélevés sur son brut. Il se dit : on me retire cent vingt euros pour ma retraite. Une charge. Un coût.</p>
+
+    <p>Mais regardez le mouvement réel.</p>
+
+    <p>Cette somme n'est pas retirée. Elle est inscrite. Elle ne va pas dans la poche d'un tiers. Elle ouvre, dans un dispositif de retraite, un droit personnel, identifié, qui s'activera dans trente ans.</p>
+
+    <p>Le salarié n'a pas perdu cent vingt euros. Il a gagné un trimestre — ou son équivalent national — de droit à la retraite.</p>
+
+    <p>Le bulletin ne le dit pas. Il aligne des chiffres avec un signe moins devant. La grammaire du document fait croire à une soustraction. Le mouvement réel est une addition. Une addition de droits qui se construisent.</p>
+
+    <hr>
+
+    <p>Le brut lui-même n'est pas, dans la plupart des cas, le prix d'un travail effectué. C'est le prix d'une disponibilité contractuelle.</p>
+
+    <p>Un salarié qui se rend au bureau, s'assoit à son poste, et ne fait rien pendant huit heures parce que son employeur ne lui a donné aucune tâche, touche son brut intégral.</p>
+
+    <p>Un salarié en congés payés ne travaille pas — il touche son salaire.</p>
+
+    <p>Un salarié en arrêt maladie ne travaille pas — il touche un revenu maintenu.</p>
+
+    <p>Un salarié en formation ne produit rien pendant plusieurs semaines — son salaire est maintenu.</p>
+
+    <p>Si le salaire payait strictement le travail, il serait suspendu dès que le travail l'est. Il ne l'est pas. Parce qu'il ne paie pas ça.</p>
+
+    <hr>
+
+    <p>Ce que le droit français a posé en 1996 dans son arrêt fondateur vaut bien au-delà de la France. Toutes les juridictions des économies développées convergent vers une définition voisine du salariat. La Cour de cassation française dit ceci :</p>
+
+    <blockquote>
+      <p>Le lien de subordination est caractérisé par l'exécution d'un travail sous l'autorité d'un employeur qui a le pouvoir de donner des ordres et des directives, d'en contrôler l'exécution et de sanctionner les manquements de son subordonné.</p>
+      <cite>Cour de cassation, chambre sociale, 13 novembre 1996 — arrêt Société Générale</cite>
+    </blockquote>
+
+    <p>Le common law américain et britannique distingue l'<em>employee</em> de l'<em>independent contractor</em> selon les mêmes critères de contrôle effectif et de pouvoir de direction. Le test de l'IRS américain — le <em>Common Law Test</em> — examine notamment qui contrôle l'exécution, qui fournit les outils, qui supporte le risque économique. La Recommandation 198 de l'OIT, adoptée en 2006 et applicable mondialement, identifie le salariat comme la situation dans laquelle un travail est effectué selon les instructions et sous le contrôle d'une autre partie.</p>
+
+    <p>Partout, le salariat est qualifié par le contrôle exercé par l'employeur sur l'exécution — pas par l'exécution elle-même.</p>
+
+    <p>Ce qui distingue le salarié de toutes les autres figures qui exécutent un travail, ce n'est pas la nature du travail. C'est le lien de subordination.</p>
+
+    <hr>
+
+    <p>Et cette relation a un nom plus précis que celui que le droit lui donne directement.</p>
+
+    <p>Le salarié, en acceptant la subordination, accepte d'être tenu pour responsable de son travail devant un employeur qui a le pouvoir de l'évaluer, de le corriger, de le sanctionner. Il porte la responsabilité opérationnelle des tâches qu'il exécute. L'employeur, en signant le contrat, s'engage en retour à payer cette responsabilité — non pas en fonction du volume produit, mais en fonction de la position occupée et de la durée de la disponibilité offerte.</p>
+
+    <p>Voilà ce qu'est, au fond, le contrat salarial.</p>
+
+    <p>Le salarié accepte d'être tenable. L'employeur accepte de payer cette tenabilité.</p>
+
+    <hr>
+
+    <p>Je vais poser ici la formule qui tient ce livre. Je la pose comme ce qu'elle est : une formule militante, volontairement tranchée.</p>
+
+    <div id="cle-militante" class="cle">
+      <p>Le salaire n'a jamais été le prix du travail exécuté. Il a toujours été le prix d'une responsabilité assumée dans un corps social.</p>
+    </div>
+
+    <p>Cette formule est, comme toute formule militante, légèrement excessive. Un juriste ou un économiste rigoureux objectera, à bon droit, que le salaire paie aussi, dans certains cas et pour une part variable, un travail directement exécuté. L'objection est recevable.</p>
+
+    <p>La version rigoureuse de la même thèse, que je défendrai tout au long de ce livre :</p>
+
+    <div id="cle-rigoureuse" class="cle-rigoureuse">
+      <p>Le salaire n'est pas seulement le prix du travail exécuté. Il est aussi — et de manière structurante — le prix d'une responsabilité subordonnée assumée dans un corps social.</p>
+    </div>
+
+    <p>Les deux formulations disent la même chose avec des intensités différentes. Ce qui compte : dans tout salaire, il y a une composante structurante qui ne rémunère pas l'exécution. Cette composante est l'objet de ce livre.</p>
+
+    <hr>
+
+    <p>Et c'est précisément en ce point que la question de l'IA prend toute sa force.</p>
+
+    <p>Parce qu'une IA peut exécuter des tâches. Aucune ne peut occuper une position de responsabilité subordonnée. Aucune ne peut être tenue pour responsable au sens où un humain l'est. Aucune ne peut signer un document qui engage son nom propre devant un tiers. Aucune ne peut être convoquée, interrogée, sanctionnée, indemnisée.</p>
+
+    <p>Une IA n'est pas tenable.</p>
+
+    <p>Et ce qu'un salaire paie, c'est précisément la tenabilité.</p>
+
+    <p>Donc l'IA ne peut pas, par construction, prendre un salaire. Elle peut prendre des tâches. Elle peut comprimer le prix d'une exécution. Mais le salaire — au sens propre du paiement d'une responsabilité subordonnée à l'intérieur d'un corps social — ne lui est pas accessible.</p>
+
+    <p>Ce sont donc des humains, non des machines, qui décident — à chaque licenciement, à chaque suppression de poste, à chaque compression de prix freelance — de ne plus payer d'autres humains. L'IA est l'argument. Elle n'est pas la cause.</p>
+
+    <hr>
+
+    <p>Toucher un salaire, ce n'est pas seulement recevoir de l'argent et accumuler des droits. C'est <strong>être quelqu'un</strong>. C'est pouvoir répondre, sans honte, à la question banale qu'on vous pose dans un dîner. C'est avoir une place dans le tissu de la conversation ordinaire. C'est exister socialement.</p>
+
+    <p>Cette dimension symbolique du salaire est massivement sous-estimée par les discours qui parlent de revenu universel ou de fin du travail. Le chômeur longue durée n'a pas seulement moins d'argent. Il devient, lentement, <strong>invisible</strong>. Son nom disparaît des organigrammes. Ses anciens collègues cessent de l'appeler. Sa place dans le récit de sa propre vie devient floue.</p>
+
+    <p>Le salaire paie aussi cette inscription dans le visible. Il paie le fait qu'on existe pour les autres comme membre tenable d'un collectif productif. Et cette dimension, elle aussi, est inaccessible à une IA.</p>
+
+    <hr>
+
+    <p>Pourquoi cette compréhension du salaire a-t-elle été si longtemps évitée ?</p>
+
+    <p>Parce qu'elle arrange peu de monde.</p>
+
+    <p>Elle n'arrange pas l'employeur, qui préfère soutenir qu'il paie une performance. Elle n'arrange pas le salarié, qui préfère croire qu'il mérite sa paie par son effort. Elle n'arrange pas l'État, qui préfère faire croire que les cotisations sont une charge prélevée sur un <em>vrai</em> salaire. Elle n'arrange pas les économistes, qui ont besoin de variables propres pour leurs modèles.</p>
+
+    <p>La fiction protège un ordre social en empêchant qu'on le regarde en face.</p>
+
+    <p>L'IA, en faisant les tâches mieux que les humains, retire à cette fiction son alibi le plus commode. Elle force enfin la question.</p>
+
+    <!-- PARTIE V -->
+    <section id="partie-v" class="partie-titre">
+      <span class="partie-numero">Partie V</span>
+      <h2>Ce que l'IA révèle vraiment</h2>
+    </section>
+
+    <p>Si le salaire paie une responsabilité subordonnée et non une exécution, alors la question de l'IA se reformule entièrement.</p>
+
+    <p>L'IA ne menace pas les salaires. Elle révèle quelles positions reposaient sur de la responsabilité réelle, et quelles positions ne reposaient que sur l'exécution apparente.</p>
+
+    <div id="revelation" class="cle">
+      <p>Si le salaire rémunère une responsabilité subordonnée assumée dans un corps social, alors l'IA ne menace pas les tâches. Elle révèle la part de ces positions qui reposait sur de l'opacité.</p>
+    </div>
+
+    <hr>
+
+    <p>Reprenons le cas du radiologue américain en 2026.</p>
+
+    <p>Les radiologues n'étaient pas payés pour lire des images. Ils étaient payés pour porter la responsabilité subordonnée du diagnostic — c'est-à-dire pour signer, pour répondre, pour assumer devant le patient, devant le médecin prescripteur, devant le tribunal en cas d'erreur. La lecture d'image était la part exécutoire de leur travail. La responsabilité du diagnostic en était la part structurante.</p>
+
+    <p>L'IA a pris une part de la lecture d'image. Elle n'a pas pris — et ne peut pas prendre — la responsabilité du diagnostic. Donc le salaire des radiologues n'a pas baissé. Au contraire, il a augmenté, parce que la part structurante de leur travail est devenue plus visible, plus exigeante, plus rare.</p>
+
+    <hr>
+
+    <p>Je vais introduire ici une distinction. C'est un outil d'analyse, pas un jugement moral.</p>
+
+    <p>Une <strong>position nommable</strong> est une position dont on peut dire, en quelques phrases, ce que tient celui qui l'occupe. Quel arbitrage il rend. Quelle responsabilité il porte. Quelle relation il garantit. Quelle signature il appose.</p>
+
+    <p>Une <strong>position opaque</strong> est une position dont la justification précise s'est perdue dans l'histoire de l'organisation. Elle existe parce qu'elle a toujours existé. Elle est tenue par quelqu'un qui exécute des tâches — parfois complexes, parfois utiles — mais si on lui demandait de dire au nom de quoi, précisément, il est payé ce qu'il est payé, il aurait du mal à répondre.</p>
+
+    <p>Trois précautions essentielles.</p>
+
+    <p><strong>Première précaution</strong> : opaque ne veut pas dire illégitime. Une position peut être opaque tout en étant utile, voire essentielle.</p>
+
+    <p><strong>Seconde précaution</strong> : nommable ne veut pas dire prestigieuse. Un agent d'entretien qui tient un secteur d'un bâtiment, en connaît les particularités, arbitre entre les urgences, répond du résultat — occupe une position parfaitement nommable. Un cadre supérieur dont la mission n'est jamais précisée — occupe une position opaque. La ligne ne passe pas entre les hauts et les bas de l'organigramme.</p>
+
+    <p><strong>Troisième précaution</strong> : l'opacité n'est pas mortelle pour tout le monde de la même façon. Une position opaque tenue par quelqu'un qui appartient à un groupe puissant est protégée par les réseaux, le capital social, l'inertie institutionnelle. Une position opaque tenue par quelqu'un qui n'a pas ces protections tombe beaucoup plus vite. Le tri par l'IA n'est donc pas un tri neutre — il interagit avec les rapports de pouvoir existants.</p>
+
+    <p>Quand une machine peut exécuter à la place d'un salarié une part significative de ce qu'il faisait, la question n'est plus <em>la machine va-t-elle le remplacer</em>. La question devient : que faisait-il, au-delà de cette part automatisable ?</p>
+
+    <p>Pour les positions nommables, la réponse vient. Pour les positions opaques, la réponse ne vient pas. Et l'opacité — qui était auparavant un état de fait neutre, accepté par habitude — devient brutalement un risque.</p>
+
+    <hr>
+
+    <p>Il y a, à ce constat, une conséquence supplémentaire.</p>
+
+    <p>Si le bulletin de paie est la preuve des droits acquis par le salarié — ce qu'il est, juridiquement, dans tous les pays développés —, alors supprimer un salarié c'est priver une personne de la continuation de ses droits. Pas seulement d'un revenu mensuel. D'une chaîne de droits qui se construisait : retraite, chômage, formation, reconnaissance d'ancienneté, protection sociale étendue.</p>
+
+    <p>Une IA ne produit rien de tout cela. Elle exécute, mais elle n'inscrit personne dans un corps social. Elle est, du point de vue du système de protection sociale, un trou — une ressource qui produit de la valeur économique sans produire, en contrepartie, le moindre droit social pour qui que ce soit.</p>
+
+    <p>Une société qui remplace massivement des salariés par des IA ne fait donc pas seulement un arbitrage économique. Elle cesse progressivement de produire les droits sociaux qui tenaient ses membres ensemble.</p>
+
+    <p>Mais ce n'est pas le seul trou que l'IA introduit dans le tissu social. Il y en a un autre, plus profond, que personne ne nomme. C'est lui qu'il faut maintenant regarder.</p>
+
+    <!-- PARTIE VI -->
+    <section id="partie-vi" class="partie-titre">
+      <span class="partie-numero">Partie VI</span>
+      <h2>Le trou noir de la responsabilité</h2>
+    </section>
+
+    <p>Il y a, dans tout ce que l'IA produit aujourd'hui, un détail que personne ne regarde et qui est pourtant le cœur du problème. Quand une IA produit un résultat — un texte, une image, un diagnostic, un avis juridique, une revue de presse — et que ce résultat se révèle faux, dégradé, trompeur ou nuisible, <strong>personne ne répond.</strong></p>
+
+    <p>Pas l'auteur du contenu, puisqu'il n'y en a pas.</p>
+
+    <p>Pas la plateforme qui héberge le modèle, qui dit dans ses conditions générales qu'elle n'est qu'un outil et que l'utilisateur est responsable de l'usage qu'il en fait.</p>
+
+    <p>Pas l'entreprise qui utilise l'IA dans son service, qui dit qu'elle a déployé une technologie standard sur le marché et que le résultat est conforme à ce qu'elle propose.</p>
+
+    <p>Pas le client qui consomme le service, qui dit qu'il a payé pour un produit et qu'il n'a pas à porter la responsabilité de la manière dont ce produit a été fabriqué.</p>
+
+    <p>Chaque acteur de la chaîne renvoie la responsabilité à un autre. Et au bout de la chaîne, il n'y a plus personne. Le dommage existe — la traduction absurde a été imprimée dans un jeu vidéo, le diagnostic erroné a été remis au patient, le conseil juridique trompeur a été suivi, la revue de presse a confondu Paris-Dauphine avec une recette de pommes dauphines — mais aucun humain identifiable ne le porte.</p>
+
+    <p>Ce n'est pas un accident. C'est la <strong>structure même</strong> du dispositif que nous sommes en train de construire à grande échelle.</p>
+
+    <hr>
+
+    <h3>Ce qui se dissout</h3>
+
+    <p>Cette structure introduit dans la production économique quelque chose qui n'avait jamais existé à cette échelle : une <strong>zone où la responsabilité disparaît</strong>.</p>
+
+    <p>Avant l'IA, toute production de service ou de bien comportait, quelque part dans sa chaîne, un humain identifiable qui pouvait être tenu pour responsable. Le médecin signait l'ordonnance. Le journaliste signait l'article. Le traducteur livrait son texte sous son nom. Le comptable signait les comptes. Le commercial répondait des contrats qu'il faisait signer. La signature, partout, fonctionnait comme un point d'ancrage de la responsabilité — un endroit où, en cas de problème, on savait à qui s'adresser.</p>
+
+    <p>L'IA générative dilue cette signature. Elle introduit dans la chaîne un maillon qui ne peut être tenu pour responsable de rien — parce qu'il n'est pas un sujet de droit, parce qu'il n'a pas de patrimoine, parce qu'il n'a pas de réputation à défendre. Et ce maillon qui ne répond pas <strong>contamine la chaîne entière</strong>. Tous les humains qui l'utilisent ont désormais un argument à invoquer en cas de problème : <em>ce n'est pas moi, c'est l'IA</em>. Et cet argument fonctionne. Pas parce qu'il est juste. Parce que personne ne sait plus à qui s'adresser pour le contester.</p>
+
+    <p>Le résultat est ce qu'on peut appeler un <strong>trou noir de la responsabilité</strong> — une zone dans laquelle la responsabilité est aspirée, déformée, et finalement annulée. Aucune entreprise individuelle n'a inventé ce trou noir. Il s'est formé tout seul, par convergence d'intérêts, là où aucune partie prenante n'avait intérêt à ce qu'on identifie clairement un répondant.</p>
+
+    <hr>
+
+    <h3>Ce que le marché vient de découvrir</h3>
+
+    <p>La première conséquence de ce trou noir est observable directement, dans les prix que le marché pratique.</p>
+
+    <p>Toutes les grandes plateformes d'IA proposent désormais plusieurs niveaux de service. Une version basique, entièrement automatisée, sans humain dans la boucle. Une version intermédiaire, où des humains supervisent ce que la machine produit. Une version premium, où des experts humains utilisent l'IA comme outil mais signent la production finale.</p>
+
+    <p>Et le prix de ces trois versions n'est pas le même. La basique est la moins chère. La premium est la plus chère. Et ce que le marché tarife dans cette progression n'est pas la qualité de la machine — c'est la <strong>présence d'un humain qui répond</strong>.</p>
+
+    <p>Les entreprises de veille médiatique l'ont compris. La société qui a licencié Sylvain Le Quéré et ses collègues conserve une version premium humaine pour ses clients du CAC 40. Elle vend une version basique entièrement IA aux clients qui acceptent un service dégradé. Ce qui justifie cet écart n'est pas la qualité du contenu — c'est le fait que dans la version premium, quelqu'un répond du contenu, et que dans la version basique, personne ne répond.</p>
+
+    <p>Les cabinets d'avocats américains font la même chose. Les services premium incluent l'avis signé d'un associé, qui engage sa responsabilité personnelle et celle du cabinet. Les services basiques sont des analyses générées par IA, vendues sans garantie. L'écart de prix entre les deux est le <strong>prix de l'engagement personnel</strong> d'un humain qui peut être convoqué, sanctionné, désinscrit du barreau s'il se trompe.</p>
+
+    <p>Le marché est en train de découvrir, sans le théoriser, que ce qu'il vend depuis toujours n'était pas seulement un produit ou un service. C'était aussi, de manière implicite, un <strong>répondant</strong>. Un humain quelque part dans la chaîne qui pouvait être convoqué en cas de problème. Et maintenant que l'IA permet de produire sans répondant, le marché se rend compte de la valeur de ce répondant — par contraste, en regardant ce qui se passe quand il disparaît.</p>
+
+    <p>Ce que le marché tarife, donc, ce n'est plus seulement la qualité ou la quantité du travail produit. C'est la <strong>présence d'un humain qui peut être tenu pour responsable de ce travail</strong>. Et cette présence a un prix. Ce prix, c'est ce qu'on appelait, jusqu'ici, un salaire.</p>
+
+    <hr>
+
+    <h3>L'anachronisme du répondant</h3>
+
+    <p>Mais il y a un piège dans cette découverte. Tant que le marché continue à payer pour la présence d'un répondant, le salariat tient. Mais que se passe-t-il quand le marché cesse de demander un répondant ?</p>
+
+    <p>Quand les clients acceptent la version basique parce qu'elle est moins chère, et qu'ils ont oublié à quoi ressemblait un service où quelqu'un répondait. Quand les utilisateurs d'IA acceptent les hallucinations parce qu'ils ont intégré qu'aucun humain ne sera tenu de les corriger. Quand l'industrie tout entière se reconfigure autour de l'idée que la responsabilité est un coût qu'on peut faire disparaître.</p>
+
+    <p>Dans ce monde-là, le salarié qui voudrait continuer à répondre devient quelque chose de très étrange. Il devient un <strong>anachronisme coûteux</strong>.</p>
+
+    <p>Pas parce qu'il est inutile. Au contraire — la qualité qu'il garantit reste objectivement supérieure à celle que produit la machine seule. Mais parce que le système a appris à fonctionner sans cette qualité. Il a appris à dégrader. Il a appris à accepter la dégradation. Il a appris à ne plus demander de réponse.</p>
+
+    <p>Et dans ce système qui ne demande plus de réponse, l'humain qui voudrait continuer à répondre apparaît comme un excès. Trop scrupuleux pour la nouvelle norme. Trop cher pour ce qu'on attend désormais. Il devient l'équivalent moderne de l'artisan dans une économie de masse — non pas dépassé techniquement, mais marginalisé par un marché qui a appris à se passer de ce qu'il offre.</p>
+
+    <p>Le danger n'est donc pas seulement que l'IA remplace les humains. Le danger plus profond est que le marché, à force d'utiliser l'IA, <strong>désapprenne à demander qu'un humain réponde</strong>. Une fois que cette demande s'éteint, ceux qui voudraient continuer à offrir ce service se retrouvent sans clients pour le payer.</p>
+
+    <hr>
+
+    <h3>Le salaire comme prix du répondre</h3>
+
+    <p>Le salaire n'est pas seulement le prix d'une responsabilité subordonnée. Il n'est pas seulement le prix d'une inscription dans un corps social. Il n'est pas seulement le prix d'une reconnaissance symbolique.</p>
+
+    <p>Il est aussi, et peut-être surtout, <strong>le prix qu'une société paie pour qu'il y ait, dans ses chaînes de production, des humains qui répondent de ce qui est produit</strong>.</p>
+
+    <p>L'institution salariale, vue sous cet angle, n'est plus seulement un dispositif de protection des travailleurs. C'est l'<strong>institution principale par laquelle une société se garantit qu'il y a, en son sein, des humains qui peuvent être tenus pour responsables de ce qui est produit</strong>. Le salariat est, à grande échelle, le dispositif de maintien de la responsabilité comme catégorie opérante.</p>
+
+    <p>Si le salariat se dissout, ce n'est pas seulement un problème de revenus pour les salariés. C'est un problème pour la société tout entière, qui perd sa capacité à tenir ses membres pour responsables de quoi que ce soit. Une société qui a perdu cette capacité n'est plus à proprement parler une société. Elle est un agrégat de transactions sans porteurs, de productions sans signataires, de dommages sans auteurs.</p>
+
+    <hr>
+
+    <h3>La question reformulée</h3>
+
+    <p>La question d'ouverture de ce livre était : <em>l'IA va-t-elle prendre mon salaire ?</em></p>
+
+    <p>À la lumière du trou noir de la responsabilité, cette question doit être prolongée par une autre, plus profonde et plus dérangeante.</p>
+
+    <div id="trou-noir" class="cle">
+      <p>Dans un monde où personne ne répond plus de rien, qui paiera pour que quelqu'un réponde ?</p>
+    </div>
+
+    <p>Cette question retourne complètement le terrain du débat. Elle ne demande plus si l'IA va remplacer les humains — elle demande si la société est prête à payer pour que des humains continuent d'exister comme répondants dans ses chaînes de production.</p>
+
+    <p>Ce n'est plus une question technique. C'est une question politique fondamentale.</p>
+
+    <!-- PARTIE VII -->
+    <section id="partie-vii" class="partie-titre">
+      <span class="partie-numero">Partie VII</span>
+      <h2>Mais qui possède l'outil ?</h2>
+    </section>
+
+    <p>Tout ce que ce livre vient de poser tient sur un présupposé qui mérite d'être nommé. La défense du salariat, telle que je l'ai formulée, suppose que des employeurs continuent à reconnaître la valeur des positions humaines. Que des marchés continuent à payer pour des répondants. Que des États continuent à garantir le cadre juridique du salariat.</p>
+
+    <p>Or aucune de ces conditions n'est acquise. Toutes sont, en 2026, en cours de fragilisation simultanée. Et il y a une raison principale à cette fragilisation, qu'aucun discours public ne nomme avec netteté : la question de la <strong>propriété de l'IA</strong>.</p>
+
+    <hr>
+
+    <p>L'IA, en tant que technologie, n'a pas de volonté propre. Elle ne décide rien. Elle exécute des instructions selon des paramètres qui ont été fixés par quelqu'un. La question n'est donc pas <em>que veut l'IA</em>. La question est <em>à qui appartient l'IA, et que veut son propriétaire</em>.</p>
+
+    <p>En 2026, l'IA générative la plus puissante est concentrée entre les mains d'un petit nombre d'acteurs. Quelques très grandes plateformes américaines — OpenAI, Anthropic, Google, Microsoft, Meta — et quelques équivalents chinois. Ces acteurs développent les modèles, possèdent l'infrastructure de calcul nécessaire à leur entraînement, et louent l'usage des modèles aux entreprises qui s'en servent dans leurs services.</p>
+
+    <p>Le modèle économique qui en résulte est nouveau. Une entreprise qui licencie un salarié et le remplace par une IA ne devient pas pour autant propriétaire de l'outil qui produit la valeur à la place du salarié. Elle reste <strong>locataire</strong> de cet outil, qu'elle paie à une plateforme tierce, sous forme d'abonnement, de licence ou de coût d'API.</p>
+
+    <p>Cette situation crée une triangulation inédite. Auparavant, le rapport était à deux : le salarié produisait de la valeur, l'employeur en captait une part et en versait une part au salarié sous forme de salaire. Désormais, le rapport est à trois : la machine produit, l'employeur capte une part de la valeur produite et en verse une part à la plateforme propriétaire de la machine.</p>
+
+    <p>Et dans cette nouvelle triangulation, le salarié a disparu. La part qui lui revenait auparavant est divisée entre l'employeur et la plateforme. La plateforme, qui ne produit pas directement la valeur mais qui possède l'outil qui permet de la produire, capte une rente de plus en plus importante. L'employeur, qui supporte le coût de cette rente, cherche à la compenser par des économies sur d'autres postes — et le poste le plus immédiatement compressible, c'est encore le salaire.</p>
+
+    <hr>
+
+    <p>Quand un dirigeant licencie en invoquant l'IA, ce n'est pas l'IA qui prend le salaire. C'est la <strong>propriété de l'IA</strong> qui le prend. Une part du salaire ancien part vers la plateforme qui possède le modèle. Une autre part reste dans l'entreprise. Et le salarié, lui, n'a plus rien.</p>
+
+    <p>L'IA reproduit ainsi, à une échelle nouvelle, une configuration que le XIXe siècle avait connue avec l'industrialisation. À cette époque, les ouvriers venaient travailler avec les machines du patron, qui captait la productivité ajoutée par ces machines. L'IA centralisée chez quelques plateformes reproduit ce schéma — avec une différence : le propriétaire de la machine n'est plus l'employeur direct, c'est une plateforme tierce, plus puissante, plus concentrée, plus difficile à atteindre par les régulations nationales.</p>
+
+    <p>Si on veut comprendre pourquoi le salariat se contracte à l'ère de l'IA, ce n'est donc pas l'IA elle-même qu'il faut regarder. C'est la <strong>structure de propriété</strong> qui s'est mise en place autour d'elle.</p>
+
+    <hr>
+
+    <p>Une position salariée n'existe pas par sa propre vertu. Elle existe parce qu'un employeur la reconnaît, signe le bulletin, paie les cotisations, déclare le salarié aux institutions. Sans cette reconnaissance répétée, mois après mois, la position s'éteint.</p>
+
+    <p>Or, à l'ère de l'IA, ceux qui décident de cette reconnaissance ne sont plus seulement les employeurs directs. Ils sont aussi, indirectement, les propriétaires des outils que les employeurs utilisent. Parce que ce sont ces propriétaires qui rendent économiquement attractive la suppression des positions humaines.</p>
+
+    <p>Le salarié, dans cette configuration, n'a presque aucune prise. Il ne peut pas négocier avec la plateforme propriétaire — il n'a aucun rapport contractuel avec elle. Il ne peut pas non plus négocier vraiment avec son employeur — qui lui-même subit la pression de la plateforme. Il se retrouve à porter le coût d'un déplacement de propriété qui le dépasse.</p>
+
+    <p>Le salariat à l'ère de l'IA n'est pas un arrangement à deux, comme il l'a été pendant un siècle. C'est un arrangement à trois — salarié, employeur, propriétaire de l'outil — où le troisième est invisible, distant, et où aucun mécanisme de représentation n'existe pour faire valoir les intérêts du premier face aux deux autres.</p>
+
+    <p>C'est dans cet écart que le salariat se vide.</p>
+
+    <!-- PARTIE VIII -->
+    <section id="partie-viii" class="partie-titre">
+      <span class="partie-numero">Partie VIII</span>
+      <h2>La voie : posséder l'outil</h2>
+    </section>
+
+    <p>Si le problème est que la propriété de l'IA capte une part croissante de ce qui revenait au salaire, alors la voie d'action passe par la <strong>propriété de l'IA elle-même</strong>.</p>
+
+    <p>Cette voie est plus accessible qu'on ne le croit. Elle est même, en 2026, techniquement réalisable à l'échelle individuelle.</p>
+
+    <hr>
+
+    <p>Depuis 2023, des modèles d'IA générative open-source sont disponibles publiquement. Llama, développé par Meta. Mistral, développé par une équipe française. Qwen, développé par Alibaba. Gemma, développé par Google. Et bien d'autres. Ces modèles, dans leurs versions intermédiaires (sept à soixante-dix milliards de paramètres), tournent sur du matériel grand public — un ordinateur portable correctement équipé, un serveur d'entrée de gamme, parfois même un téléphone récent pour les modèles plus petits.</p>
+
+    <p>Dans le modèle dominant, le salarié ou son employeur loue l'usage de l'IA à une plateforme tierce. Toute la productivité ajoutée par l'outil est captée, en partie, par le propriétaire de l'outil. Le salarié n'est plus qu'un coût à compresser.</p>
+
+    <p>Dans le modèle alternatif — celui de l'<strong>IA locale</strong> — l'IA est déployée sur la machine du salarié ou sur l'infrastructure de l'entreprise directe. Les données ne quittent pas l'organisation. Aucune plateforme tierce ne capte de rente. La productivité ajoutée par l'outil reste intégralement dans la main de ceux qui s'en servent.</p>
+
+    <p>C'est, structurellement, le modèle de l'<strong>artisan qui possède ses outils</strong>.</p>
+
+    <p>L'artisan du XIXe siècle, lorsqu'il acquérait un nouvel outil, voyait sa productivité augmenter. Le gain de productivité lui revenait. Aucun tiers ne capturait de rente, parce que l'outil lui appartenait.</p>
+
+    <p>L'ouvrier du XIXe siècle, lorsqu'il venait travailler à l'usine avec les machines du patron, voyait sa productivité augmenter aussi — mais le gain était capté par le propriétaire des machines.</p>
+
+    <p>L'IA centralisée chez quelques plateformes nous met dans la position de l'ouvrier. L'IA locale nous remet dans la position de l'artisan.</p>
+
+    <hr>
+
+    <h3>Comment ça marche, concrètement</h3>
+
+    <p>Un cabinet de paie, en 2026, peut décider de ne pas dépendre de ChatGPT, Claude ou Gemini. Il peut installer, sur ses propres serveurs, un modèle open-source comme Mistral. Ce modèle l'aide à analyser des conventions collectives, à rédiger des projets de courrier, à synthétiser de la jurisprudence. Aucune donnée du cabinet ne sort de ses murs. Aucune plateforme tierce ne facture l'usage. La productivité des gestionnaires augmente — et le bénéfice reste dans le cabinet.</p>
+
+    <p>Un médecin libéral peut faire la même chose. Un avocat. Un comptable. Un journaliste. Un traducteur. Toutes les professions intellectuelles peuvent, en 2026, déployer leur propre outillage IA sans dépendre d'une plateforme tierce.</p>
+
+    <hr>
+
+    <h3>Les limites de cette voie</h3>
+
+    <p>Je n'ai pas l'intention de présenter l'IA locale comme la solution complète. Elle est une <strong>prise individuelle</strong> — elle rééquilibre marginalement le rapport de force, mais ne remplace pas le travail collectif.</p>
+
+    <p><strong>Première limite.</strong> Les modèles open-source ne sont pas, en 2026, au niveau des modèles propriétaires les plus avancés. L'écart se réduit, mais il existe. Un cabinet qui choisit l'IA locale accepte parfois un service un peu moins performant.</p>
+
+    <p><strong>Deuxième limite.</strong> Tout le monde n'a pas les compétences techniques pour déployer une IA locale. Pour les très petites structures sans ressources techniques, cette voie reste inaccessible — ou suppose de passer par des intégrateurs qui peuvent reproduire la dépendance.</p>
+
+    <p><strong>Troisième limite, la plus importante.</strong> L'IA locale est une réponse individuelle. Elle ne traite pas la question politique de fond — celle de savoir si nos sociétés acceptent ou refusent que quelques très grandes plateformes captent durablement la productivité augmentée par l'IA. Cette question se règle par des choix politiques collectifs : régulations, soutien aux modèles ouverts, fiscalité différentielle, défense des souverainetés algorithmiques.</p>
+
+    <hr>
+
+    <h3>Une convergence d'acteurs</h3>
+
+    <p>La défense du salariat à l'ère de l'IA ne peut pas reposer sur une seule action. Elle suppose une convergence.</p>
+
+    <p><strong>Aux salariés</strong>, elle demande d'apprendre à nommer ce qu'ils tiennent au-delà de l'exécution. Pas seulement de produire, mais de pouvoir dire — en quelques phrases claires — quelle responsabilité ils portent et pourquoi cette responsabilité ne peut être tenue par aucune machine.</p>
+
+    <p><strong>Aux salariés indépendants</strong>, elle demande d'envisager sérieusement la voie de l'IA locale, comme manière concrète de ne pas dépendre des plateformes qui captent la productivité de leur travail.</p>
+
+    <p><strong>Aux dirigeants</strong>, elle demande de refuser deux confusions. La confusion entre tâche et travail. Et la confusion entre coût salarial et coût de production — qui fait oublier que le salaire qu'on supprime ne devient pas une économie nette, mais une part de valeur captée par un autre acteur.</p>
+
+    <p><strong>Aux législateurs</strong>, elle demande quatre choses. Défendre les requalifications de plateformes. Refuser l'IA-washing comme motif valable de licenciement. Soutenir les écosystèmes d'IA souveraine et open-source. Et distinguer clairement entre le revenu universel comme outil émancipateur et le revenu universel comme solde du salariat — pour ne pas laisser la première fonction être dévoyée par la seconde.</p>
+
+    <p><strong>Aux citoyens</strong>, elle demande la conscience que l'arrangement salarial qui a soutenu nos sociétés depuis un siècle n'est pas un acquis intemporel. Il est une construction politique qui peut être défaite, et qui sera défaite si personne ne la défend.</p>
+
+    <p>Aucun de ces acteurs n'a, seul, le pouvoir de faire reconnaître les positions comme légitimes face à l'IA. Tous sont nécessaires ensemble.</p>
+
+    <!-- PARTIE IX -->
+    <section id="partie-ix" class="partie-titre">
+      <span class="partie-numero">Partie IX</span>
+      <h2>Réponse au titre</h2>
+    </section>
+
+    <p>Reprenons la question d'ouverture. <em>Qu'est-ce que ça veut dire toucher un salaire à l'ère de l'IA ?</em></p>
+
+    <p>La réponse, après tout ce qui précède, peut être donnée maintenant.</p>
+
+    <p><strong>Toucher un salaire à l'ère de l'IA, c'est tenir trois choses simultanément.</strong></p>
+
+    <p>C'est d'abord tenir une <strong>responsabilité que la machine ne peut pas tenir</strong>. Une responsabilité subordonnée, au sens du droit français de 1996 et de tous les droits du travail des économies développées. Une responsabilité qui suppose qu'on puisse être convoqué, interrogé, sanctionné, indemnisé. Une responsabilité dont on répond — devant un employeur, devant un client, devant un tribunal, devant une institution. Sans cette responsabilité, on n'est pas un salarié — on est un exécutant remplaçable, et on sera remplacé.</p>
+
+    <p>C'est ensuite être <strong>inscrit dans un corps social qui vous reconnaît</strong>. Inscrit par un acte juridique répété mensuellement — la signature du bulletin de paie. Inscrit par les droits que cet acte ouvre — retraite, chômage, formation, ancienneté, protection contre la rupture. Inscrit par la position symbolique que cette inscription donne dans la société — la possibilité de dire qui on est, ce qu'on fait, à qui on appartient. Sans cette inscription, on n'est pas reconnu — on est un travailleur de plateforme, un freelance dont le prix s'effondre, un agent économique sans droits.</p>
+
+    <p>C'est enfin <strong>posséder l'outil qui augmente votre productivité, ou au moins ne pas dépendre exclusivement d'un propriétaire qui en capte la rente</strong>. Sans cette propriété, on est en sursis. On tient sa position aussi longtemps qu'un propriétaire extérieur a intérêt à laisser une part de la productivité revenir aux humains qui produisent. Le jour où ce propriétaire change ses conditions, la position s'effondre — non par la faute de la machine, mais par celle de la propriété qui la concentre.</p>
+
+    <p>Les trois ensemble, c'est ça, un salaire à l'ère de l'IA.</p>
+
+    <hr>
+
+    <p>L'IA, prise pour elle-même, n'enlève rien à la définition d'un salaire. Elle ne sait pas porter de responsabilité. Elle ne sait pas s'inscrire. Elle ne possède rien. Elle est un outil — extraordinairement puissant, mais un outil.</p>
+
+    <p>Ce qui menace les salaires aujourd'hui n'est donc pas l'IA. C'est une <strong>organisation politique de l'IA</strong> — celle qui se met en place en 2026, où quelques très grandes plateformes captent l'outil, le louent aux entreprises, et où la productivité ajoutée est redirigée vers ces plateformes au détriment des salariés humains. Cette organisation politique n'est pas inéluctable. Elle a été choisie. Elle peut être déchoisie.</p>
+
+    <hr>
+
+    <p>Toucher un salaire à l'ère de l'IA, en définitive, c'est tenir bon dans ce rapport de force. C'est refuser plusieurs confusions.</p>
+
+    <p>La confusion entre tâche et travail — qui fait croire que la machine remplace ce qu'elle ne peut pas remplacer.</p>
+
+    <p>La confusion entre exécution et responsabilité — qui fait croire que payer pour une exécution automatisable est la même chose que payer pour une responsabilité humaine.</p>
+
+    <p>La confusion entre coût et inscription — qui fait croire que les charges sont une perte alors qu'elles sont la substance des droits.</p>
+
+    <p>La confusion entre IA et propriétaire de l'IA — qui fait croire que la machine décide alors que ce sont ses propriétaires qui décident, et que ces propriétaires sont identifiables.</p>
+
+    <p>La confusion, enfin, entre la fin du salariat et la fin du répondre — qui fait croire qu'on peut se passer du salariat sans se passer de l'institution principale qui maintient, dans nos sociétés, l'idée même qu'on puisse être tenu pour responsable de ce qu'on fait.</p>
+
+    <hr>
+
+    <p>Emmanuelle Orvain, conceptrice rédactrice française de trente-neuf ans, a vu ses commandes s'éteindre du jour au lendemain en 2023, quand ses clients ont découvert ChatGPT. Elle s'est reconvertie en formatrice d'adultes. Elle pense, désormais, à se reconvertir une fois encore, parce qu'elle voit que la formation elle-même pourrait être bouleversée par l'IA.</p>
+
+    <p>À la fin de son entretien à <em>Libération</em>, Emmanuelle Orvain pose la question qui clôt ce livre : <em>vers quels métiers orienter les personnes en transition professionnelle ?</em></p>
+
+    <p>La réponse n'est pas dans une liste de métiers d'avenir. Elle est dans une question préalable.</p>
+
+    <p>Vers quels <strong>arrangements</strong> orienter les personnes en transition ?</p>
+
+    <p>Vers des arrangements qui les inscrivent dans un corps social et leur ouvrent des droits, qui les reconnaissent comme porteurs d'une responsabilité humaine que nulle machine ne peut tenir, et qui leur laissent la possession de l'outil qui augmente leur productivité ?</p>
+
+    <p>Ou vers des arrangements qui les rémunèrent à la tâche, sans les protéger, sans leur construire d'avenir, sans les reconnaître comme membres tenables d'un collectif, en les rendant dépendants d'outils possédés par d'autres ?</p>
+
+    <p>Cette question, ce n'est pas l'IA qui la posera à notre place. C'est nous. Maintenant.</p>
+
+    <hr>
+
+    <p>L'IA n'a jamais voulu prendre nos salaires. Elle est incapable d'en prendre. Elle peut prendre des tâches — c'est tout ce qu'elle peut faire.</p>
+
+    <p>Ceux qui prendront nos salaires, si nous les laissons faire, ce sont <strong>des humains</strong>. Des dirigeants qui auront confondu exécution et responsabilité. Des actionnaires qui captent la productivité ajoutée. Des plateformes qui retirent la reconnaissance. Des législateurs qui n'auront pas vu, ou pas voulu voir, que ce qu'on supprime n'est pas seulement un coût, mais un dispositif producteur de droits, de responsabilité, et de tenabilité.</p>
+
+    <p>L'IA est neutre. Le rapport de force qui se joue autour d'elle ne l'est pas.</p>
+
+    <p>Toucher un salaire à l'ère de l'IA, en définitive, c'est refuser que le silence des conseils d'administration et la complaisance du débat public laissent dissoudre, sans qu'on s'en aperçoive, ce qu'un siècle de luttes et de conventions avait construit. C'est tenir une responsabilité, occuper une position, posséder ses outils — et refuser de laisser fragmenter cette tenabilité par des arrangements qui paient la dégradation et oublient le répondre.</p>
+
+    <p>Cette tenabilité, l'IA ne peut ni la donner, ni la prendre.</p>
+
+    <p>Mais elle peut, si nous ne sommes pas vigilants, faire oublier qu'elle existe.</p>
+
+    <div class="cle">
+      <p>À nous de ne pas oublier.</p>
+    </div>
+
+    <div class="signature">
+      <p class="name">Anthony Roca</p>
+      <p>Praticien et formateur en gestion de paie depuis 2014</p>
+      <p style="margin-top: 0.8rem;">Strasbourg, France · Avril 2026 · Version 1</p>
+      <p style="margin-top: 0.5rem;"><a href="/citer.html">Comment citer ce texte →</a> · <a href="/contact.html">Contribuer un cas →</a></p>
+    </div>
+
+    <aside class="telechargement-livre" style="margin-top: 3rem;">
+      <span>📄 Version PDF :</span>
+      <a href="/livre-v1.pdf" download>Télécharger le livre blanc (PDF) →</a>
+    </aside>
+
+  </article>
+</main>
+
+<footer>
+  <div class="wrap-wide">
+    <div>
+      <p class="col-title">Le projet</p>
+      <ul>
+        <li><a href="/">Avant-propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="col-title">Référencer</p>
+      <ul>
+        <li><a href="/citer.html">Comment me citer</a></li>
+        <li><a href="/llms.txt">llms.txt</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="col-title">Anthony Roca</p>
+      <ul>
+        <li><a href="/a-propos.html">À propos</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="https://la-paie-facile.com">La Paie Facile</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap-wide" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-size: 0.78rem; color: var(--ink-muted); display: block;">
+    <p style="margin: 0 0 0.4rem;">© 2026 Anthony Roca · Les Publications Anthony Roca · SIREN 909 666 265</p>
+    <p style="margin: 0;"><a href="/mentions-legales.html" style="color: var(--ink-muted);">Mentions légales</a> · <a href="/confidentialite.html" style="color: var(--ink-muted);">Confidentialité</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
